@@ -1,13 +1,14 @@
 
-function Circle (x,y,r) {
-    this.r=r; 
+function Circle(radius){
+    this.setRadius(radius);
 }
 
-Circle.prototype = Object(Shape.prototype);
-
-Circle.prototype.draw= function(ctx){
-    ctx.beginPath();
-    ctx.arc(x, y, r, 0, 2 * Math.PI);
-    ctx.stroke();
+Circle.prototype = Object.create(Shape.prototype);
+Circle.prototype.getRadius = function() { return this.radius; }
+Circle.prototype.setRadius = function(radius) { this.radius = radius; }
+Circle.prototype.draw = function(context) {
+    context.beginPath();
+    context.arc(this.getCenter().getX(),this.getCenter().getY(),this.getRadius(),0,2*Math.PI);
+    context.stroke();
 }
  

@@ -1,11 +1,11 @@
 function drawShapes1(shapes, context){
     for(let shape of shapes){
-        shape.draw1(context);
+    shape.draw1(context);
     }
 }
-
+   
 function main1(){
-    let circle = new Circle1(50,100,75);
+    let circle = new Circle1(50);
     circle.setCenter1(new Point1(100,75));
     let rectangle = new Rectangle1(150, 100);
     rectangle.setCenter1(new Point1(150,30));

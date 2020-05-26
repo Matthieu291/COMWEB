@@ -1,11 +1,8 @@
-function Shape (x,y) {
+
+  
+function Shape(x,y){
     this.center = new Point(x,y);
-
-    Shape.prototype.setCenter = function(point){
-        this.center = point;
-        }
-
-    Shape.prototype.getCenter = function(){
-        return this.center; 
-    }
 }
+
+Shape.prototype.getCenter = function() { return this.center; }
+Shape.prototype.setCenter = function(center) { this.center = center; }

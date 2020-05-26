@@ -1,4 +1,5 @@
 
+  
 function drawShapes(shapes, context){
     for(let shape of shapes){
         shape.draw(context);
@@ -15,4 +16,4 @@ function main(){
     let context = canvas.getContext("2d");
     drawShapes(shapes, context);
 }
-main();
+main()

@@ -7,7 +7,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
     rel="stylesheet">   
-    <script src="chatClient.js"></script>
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Web Socket</title>
 </head>
@@ -21,7 +21,7 @@
                        Chat
                    </div>
                    <div class="card-body">
-                    <textarea class="form-control" style="height: 150px">
+                    <textarea class="form-control" style="height: 150px" name="chat" id="chat" disabled>
                     
                     </textarea>
                     <br>
@@ -32,7 +32,9 @@
                     <input type="text" class="form-control" id="phrase" name="phrase" placeholder="Entrez votre message">
                     </div>
                     
-                    <input type="submit" style="float: right;float: bottom" class="btn btn-success" value ="Envoyer" name ="envoyer" id="envoyer"></input>
+                    <a href="#" class="btn btn-success" id="envoyer">
+                        <span class="material-icons">send</span> Envoyer
+                    </a>
                     
                     </div>
                </div>
@@ -43,4 +45,5 @@
         
     
 </body>
+<script src="chatClient.js"></script>
 </html>
