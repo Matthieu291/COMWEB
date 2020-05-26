@@ -1,92 +1,109 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8" lang="en">
+  <head>
+    <title>Site</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+
+            <li class="nav-item">
+              <a class="nav-link" href="accueil.html">Accueil</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="nourriture.html">Nourriture</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="sport.html">Sport</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="sommeil.html">Sommeil</a>
+            </li>
+
+            <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                A propos
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="equipe.html">L'équipe</a>
+                <a class="dropdown-item" href="contact.html">Contact</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    <div class="container">
+      <br>
+            <div class="row">
+                <div class="col-md-12"> 
+                    <div class="jumbotron">
+                        <h1 class="display-4"><i class="material-icons">apps</i> Moniteur d'activités</h1>
+                        <p class="lead">Bienvenue sur notre outil de suivi d'activités. Visualisez les statistiques sur vos repas, vos activités sportives ou encore sur votre sommeil.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-3">
+                    <div class="card">
+                        <img src="img/nourriture.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <i class="material-icons">fastfood</i>
+                            <strong>Nourriture</strong>
+                            <p>Suivez vos repas : heure, type, quantité, calories...</p><a class="btn btn-primary" href="nourriture.html" role="button">Voir plus</a>
+                        </div>
+                    </div>              
+                </div>
+
+              <div class="col-md-3">
+                    <div class="card">
+                        <img src="img/sport.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <i class="material-icons">sports</i>
+                            <strong>Sport</strong> 
+                            <p>Quelles activités avez-vous pratiquées aujourd'hui ?</p><a class="btn btn-primary" href="sport.html" role="button">Voir plus</a>
+                        </div>
+                    </div>
+              </div>
+
+              <div class="col-md-3">
+                    <div class="card">
+                        <img src="img/sommeil.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <i class="material-icons">timeline</i>
+                            <strong>Sommeil</strong>
+                            <p>Dormez-vous assez ? Suivez la qualité de votre sommeil.</p><a class="btn btn-primary" href="sommeil.html" role="button">Voir plus</a>
+                        </div>
+                    </div>
+              </div>
+
+              <div class="col-md-3">
+                        <div class="card">
+                            <img src="img/photos.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <i class="material-icons">add_a_photo</i>
+                                <strong>Blog</strong>
+                                <p>Où êtes vous allé ? Suivez votre activité en image !</p><a class="btn btn-primary" href="blog.html" role="button">Voir plus</a>
+                           </div>
+                        </div>
+                </div>
+            </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    rel="stylesheet">   
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>Accueil</title>
-</head>
-<body>
-    <container class="container-fluid">
-        <div class="row">
-            <div class="col">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light mb-5">
-                    <a class="navbar-brand" href="accueil.html">Accueil</a>
-                    <a class="navbar-brand" href="nourriture.html">Nourriture</a>
-                    <a class="navbar-brand" href="#">Sport</a>
-                    <a class="navbar-brand" href="#">Sommeil</a>
-                    <a class="navbar-brand" href="#">Blog</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </nav>
-            </div>
-        </div>
-        
-        <div class="row mb-5">
-            <container class="container-fluid">
-                <div class="row">
-                    <div class="offset-2"></div>
-                    <div class="col-8">
-                        <div class="jumbotron">
-                            <h1 class="display-4">Moniteur d'activités</h1>
-                            <p>Bienvenue sur notre outil de suivi d'activités. Visualisez les statistiques sur vos repas, vos activités sportive ou encore sur votre someil.</p>
-                        </div>
-                    </div>
-                </div>
-            </container>
-        </div>
-        <div class="row">
-            <container class="container-fluid">
-                <div class="row">
-                    <div class="offset-2"></div>
-                    <div class="col-2">
-                        <div class="card" style="width: 18rem;">
-                            <img src="img/nourriture.jpg" class="card-img-top" alt="Nourriture">
-                            <div class="card-body">
-                                <h5 class="card-title">Nourriture</h5>
-                                <p class="card-text">Suivez votre repas : heure, type, quantité, calorie ...</p>
-                                <a href="nourriture.html" class="btn btn-primary">Voir plus</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="card" style="width: 18rem;">
-                            <img src="img/sport.jpg" class="card-img-top" alt="Sport">
-                            <div class="card-body">
-                                <h5 class="card-title">Sport</h5>
-                                <p class="card-text">Quelles activités avez vous pratiquées aujourd'hui ?</p>
-                                <a href="#" class="btn btn-primary">Voir plus</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="card" style="width: 18rem;">
-                            <img src="img/sommeil.jpg" class="card-img-top" alt="Sommeil">
-                            <div class="card-body">
-                                <h5 class="card-title">Sommeil</h5>
-                                <p class="card-text">Dormez-vous assez ? Suivez la qualité de votre sommeil.</p>
-                                <a href="#" class="btn btn-primary">Voir plus</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class= col-2>
-                        <div class="card" style="width: 18rem;">
-                            <img src="img/photos.jpg" class="card-img-top" alt="Blog">
-                            <div class="card-body">
-                                <h5 class="card-title">Blog</h5>
-                                <p class="card-text">Où êtes vous allé ? Suivez votre activité en image !</p>
-                                <a href="#" class="btn btn-primary">Voir plus</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </container>
-        </div>
-    </container>
-</body>
+  </body>
 </html>
