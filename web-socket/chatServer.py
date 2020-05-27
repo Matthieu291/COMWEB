@@ -4,11 +4,11 @@ import websockets
 client =[]
 
 async def chatServer(websocket, path):
-    client.append(websocket); 
+    client.append(websocket)
     async for message in websocket:
+        print(message)
         for x in client:
-            print(message)
-            await client.send(message)
+            await x.send(message)
 
 start_server = websockets.serve(chatServer, "localhost", 12345)
 

@@ -48,3 +48,12 @@ function print_error(error) {
 
 ajaxRequest('GET', 'php/timestamp.php',print);
  
+let time = setInterval(timer,1000); 
+
+function timer(){
+    ajaxRequest('GET','php/timestamp.php',display);
+}
+
+function display (response){
+    document.getElementById('timestamps').innerHTML = "<i class ='material-icons'>watch_later</i>"+"<strong>"+response+"</strong>"; 
+}
