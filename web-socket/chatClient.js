@@ -5,7 +5,7 @@ let login = prompt("Entrez votre login :");
 
 
 function createWebSocket () {
-  websocket1 = new WebSocket('ws://localhost:12345');
+  let websocket1 = new WebSocket('ws://localhost:12345');
   let button = document.getElementById('envoyer'); 
   button.addEventListener('click', sendMessage); 
   return websocket1;
@@ -14,7 +14,7 @@ function createWebSocket () {
 function sendMessage (){
   let mssg = document.getElementById("phrase").value;
   document.getElementById("phrase").value="";
-  websocket.send(login+" :"+mssg);
+  websocket.send(login+" :  "+mssg);
 }
 
 websocket.onopen = function () {
